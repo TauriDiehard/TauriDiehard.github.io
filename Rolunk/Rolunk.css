@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Roboto Condensed",sans-serif;
+    box-sizing: border-box;
+  }
+  .container-xxl{
+
+
+    color:white;
+    width: 100%;
+
+    overflow: hidden;
+    background-color:#121212;
+  }
+  .navbar-brand-costom{
+    width: 30px;
+    height:38px;
+}
+.navbar-brand-costom:hover{
+    color:#dcdcdc;
+    text-decoration: none;
+    
+}
+.nav-link{
+    margin-left: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.nav-item{
+    color:white;
+    font-family: 'Teko', sans-serif;
+}
+
+
+.navbar-custom {
+    background-color: rgb(29, 30, 33);
+
+}
+.nav-item:hover{
+    color:#dcdcdc;
+    
+}
+/* RÓLUNK*/
+
+.container-rólunk{
+    background-color: #202020;
+    color: white;
+    width: 100%;
+  }
+  .panel-body{
+    overflow: hidden;
+    padding-right: 2%;
+      padding-left: 2%;
+  }
+  .panel{
+    overflow-y: hidden;
+}
+  #panel-rolunk{
+    overflow-y: hidden;
+    background-color: #131111;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-top: 1%;
+
+    overflow: hidden;
+  }
+  .card{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+  }
+
+
+  .img {
+    opacity: 1;
+    display: inline-block;
+    overflow: hidden;
+  }
+/*hidden text*/
+
+
+
+.tooltipxd {
+
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  width: 100%;
+  box-shadow:  0px 0px 0px 120px #141412;
+overflow: hidden;
+border: 1px solid white;
+
+
+}
+.progress{
+
+  padding: 100%;
+
+}
+.tooltipxd .progress {
+
+  overflow: hidden;
+  position:absolute;
+  object-position: 50% 50%;
+  visibility: hidden;
+  width: 80%;
+  height: 30%;
+margin-top: 4%;
+
+  background-color:  hsla(0, 0%, 0%, 0);
+  color: #fff;
+  text-align: center;
+
+  padding: 5px 0;
+
+  /* Position the tooltip */
+
+  z-index: 500;
+}
+
+
+.tooltipxd:hover .progress {
+  visibility: visible;
+}
+#panel-rolunk-long{
+  text-align: center;
+  background-color:  hsla(0, 0%, 0%, 0);
+}
+
+
+
+  #black{
+    color:rgba(233, 154, 6, 0.89);
+    text-decoration: none;
+    text-transform: none;
+    text-indent: none;
+  }
+  #black-hover{
+    text-decoration: none;
+  }
+  .row{
+      margin-top: 2%;
+  }
+
+#kepek{
+    margin-top: 3%;
+}
+/*képek*/
+.carousel-caption{
+    background: rgba(0, 0, 0, 0.5);
+
+}
+/*képek*/
+#tervek{
+    margin-top: 2%;
+}
+
+/*gomb*/
+.button {
+    border-radius: 8px;
+    background-color: #f88b0e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  .button:hover{
+    background-color: #f3bc06;
+  }
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+    
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+    
+  }
+
+
+
+
+
+
+
+
+
+/*legalsó*/
+#box {
+    background-color: rgb(29, 30, 33);
+padding: 20px;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    padding-left: 70px;
+width: 100%;
+}
+#tovabbi {
+    font-size: 15px;
+    text-decoration: underline;
+    font-family: 'NunitoB';
+    color: #adb5bd;
+}
+
+ /* Scroll Top*/
+ .scrollToTopBtn {
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+  
+    position: fixed;
+    bottom: 15%;
+    background-image: url(Rolunk-img-video/nyilacska.png);
+    
+    right: 2%;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(100px);
+    border: 20px white;
+    transition: all .5s ease
+  }
+  
+  .showBtn {
+  
+    opacity: 1;
+    transform: translateY(0)
+  }
+
+
+/*ZOOM*/
+  .img-hover-zoom {
+    height: 100%; /* [1.1] Set it as per your need */
+    overflow: hidden !important ;
+  }
+  
+  /* [2] Transition property for smooth transformation of images */
+  .img-hover-zoom img {
+    transition: transform .5s ease;
+    overflow: hidden;
+  }
+  
+  /* [3] Finally, transforming the image when container gets hovered */
+  .img-hover-zoom:hover img {
+    transform: scale(1.1);
+    overflow: hidden;
+  }
+
+
+
+  @media (max-width: 992px) {
+    .tooltipxd .progress .tooltipxd:hover .progress {
+      visibility: hidden;
+    }
+    #panel-rolunk-long{
+      visibility: hidden;
+    }
+    .col-sm-3{
+      margin-top:-125%;
+      visibility: hidden;
+      z-index: -999;
+    }
+  }
+
+
+
+
+/* navbar telefonso*/
+@media (max-width: 992px) {
+    .navbar-collapse {
+        position: fixed !important;
+        z-index: 999;
+        top:0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+    .navbar-collapse.collapsing {
+        left: -25%;
+        transition: height 0s ease;
+        background: rgba(14, 11, 11, 0.4);
+        
+    }
+
+    .navbar-collapse.show {
+        left: 0;
+        transition: left 300ms ease-in-out;
+        background: rgba(14, 11, 11, 0.4);
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 500ms ease-in-out;
+        background: rgba(14, 11, 11, 0.4);
+    }
+  
+}
+
+.navbar-inverse .navbar-toggler-icon{
+         background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
+}
